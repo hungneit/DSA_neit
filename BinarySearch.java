@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class BinarySearch {
     public static int binarySearch(int[] a, int number) {
         Arrays.sort(a);
-        int l = 0, r = a.length;
+        int l = 0, r = a.length - 1;
         while (l <= r) {
             int m = (l + r) / 2;
             if (a[m] == number) {
